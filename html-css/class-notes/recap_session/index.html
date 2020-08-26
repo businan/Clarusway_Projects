@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Her turlu arac kiralama isleri yapilir."/>
+    <meta name="keywords" content="Arac kiralama, Arac kiralama istanbul" />
+    <meta name="author" content="Clarusway Full Stack Team" />
+    <!-- <base href="images/" /> -->
+
+    <title>WebDesign</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="gfavicon.png" type="image/png" />
+    <style>
+        p{
+            color:blue
+        }
+        .ptags{
+          color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="head">Lorem ipsum dolor sit amet.</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione
+      quis recusandae tenetur minima delectus deserunt molestias ad perspiciatis
+      ullam ipsam error consequuntur consectetur doloremque ut esse, odit
+      dolores nihil!
+    </p>
+    <h3>Lorem ipsum dolor sit.</h3>
+    <p><b>Lorem</b> ipsum dolor sit amet.</p>
+    <p><strong>Lorem</strong> ipsum dolor sit amet.</p>
+    <p><i>Lorem, ipsum dolor.</i>Lorem, ipsum dolor.</p>
+    <p><em>Lorem, ipsum dolor.</em>Lorem, ipsum dolor.</p>
+    <p><u>Lorem, ipsum dolor.</u>Lorem, ipsum dolor.</p>
+    <p><ins>Lorem, ipsum dolor.</ins>Lorem, ipsum dolor.</p>
+    <p>X<sup>2</sup></p>
+    <p>CO<sub>2</sub></p>
+    <p>
+      <small><del>200TL</del></small
+      >150TL
+    </p>
+    <p><mark>lorem</mark>Lorem, ipsum dolor.</p>
+    <!--shift+alt+asagi yon tusu metnin aynisini asagi kopyalar-->
+    <!--cltr+k+c comment ctrl+k+u uncomment-->
+    <hr />
+    <p class="ptags">Unorderd list</p>
+    <ul style="list-style-type: square;">
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+      <li>Item4</li>
+      <li>Item5</li>
+    </ul>
+    <ul style="list-style-type: circle;">
+      <li>
+        Item1
+        <ul style="list-style-type: none;">
+          <li>Sub-Item-1</li>
+          <li>Sub-Item-2</li>
+        </ul>
+      </li>
+      <li>Item2</li>
+      <li>Item3</li>
+      <li>Item4</li>
+      <li>Item5</li>
+    </ul>
+    <hr />
+    <p class="ptags">Ordered List</p>
+    <ol start="5">
+      <li>Item 1</li>
+      <li>
+        Item 2
+        <ol type="a">
+          <li>Sub-Items1</li>
+          <li>Sub-Items2</li>
+          <li>Sub-Items3</li>
+        </ol>
+      </li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ol>
+    <hr />
+    <p class="ptags">Definition List</p>
+    <dl>
+      <dt>Scale</dt>
+      <dd>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+        porro.
+      </dd>
+      <dt>Sashimi</dt>
+      <dd>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, in!
+      </dd>
+    </dl>
+    <hr />
+    <p class="ptags">Images</p>
+    <img src="barney.png" alt="Barney" width="100px" />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/tr/b/bb/Fred_%C3%87akmakta%C5%9F.jpg"
+      alt="Fred"
+      width="50"
+    />
+
+    <hr />
+    <p class="ptags">Tables</p>
+    <table border="1">
+      <!--thead tbody tfoot Browsera tablomun basligi burasi demek icin yaziyoruz kullanici icin degil.-->
+      <thead>
+        <tr>
+          <th>Kurs Adi</th>
+          <th>Kurs Saati</th>
+          <th>Ders Adedi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>45</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>45</td>
+          <td rowspan="2">200</td>
+        </tr>
+        <tr>
+          <td colspan="2">JavaScript</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Toplam</td>
+          <td>500</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr>
+    <p class="ptags">Links</p>
+
+    <a href="https://www.imdb.com/" target="_blank">IMDB</a><br>
+
+    <a href="uygulama_calismasi_1.html" target="_blank">Baska bir web sitesi calismasi</a><br>
+
+    <a href="./images/barney.png" target="_blank">Barney.png</a><br>
+
+    <a href="./uygulama_calismasi_1.rar" target="_blank">indir</a><br>
+
+    <a href="https://tr.wikipedia.org/wiki/Fred_%C3%87akmakta%C5%9F" target="_blank"><img src="./images/barney.png" alt="Barney" width="100px"></a><br>
+
+    <a href="#head">Basa Don</a>
+
+
+    
+    <form action="http://www.clarusway.com/action_page.php">
+      <h2>Welcome Clarusway</h2>
+      Username:
+      <input type="text" name="username" /><br /><br />
+      Password:
+      <input type="password" name="password" />
+      <h2>GENDER:</h2>
+      <input type="radio" name="gender" value="male" checked /> Male<br />
+      <input type="radio" name="gender" value="female" /> Female<br />
+      <p>How old are you?</p>
+      Age: <input type="number" name="age" />
+      <p>Please select a lesson.</p>
+      <select name="lessons">
+        <option value="java">Java</option>
+        <option value="css" selected>CSS</option>
+        <option value="html">HTML</option>
+        <option value="git">Git</option>
+        <option value="js">Javascript</option>
+        <option value="maven">Maven</option>
+      </select>
+      <p>Please select a lesson.</p>
+      <input type="text" list="lessons" name="lesson" />
+      <datalist id="lessons">
+        <option value="java"></option>
+        <option value="css"></option>
+        <option value="html"></option>
+        <option value="git"></option>
+        <option value="js"></option>
+        <option value="maven"></option>
+      </datalist>
+      <p>Which days are you busy.</p>
+      <input type="checkbox" name="days" value="monday" /> Monday<br />
+      <input type="checkbox" name="days" value="tuesday" />Tuesday<br />
+      <input type="checkbox" name="days" value="wednesday" /> Wednesday<br />
+      <input type="checkbox" name="days" value="thursday" /> Thursday<br />
+      <input type="checkbox" name="days" value="friday" /> Friday<br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" /><br />
+      Please, enter your comments. <br />
+      <textarea name="commets" cols="60" rows="10">
+Enter your comments here.</textarea
+      ><br />
+    </form>
+  </body>
+</html>
