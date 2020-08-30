@@ -19,6 +19,12 @@ body {
     padding-top: 5px;
     margin-left: 5px;
 }
+#content {
+    box-sizing: content-box;
+    
+    width: 280px;
+    height: 26px;
+}
 
 #container{
     background-color:rgb(0, 0, 0 , 0.5);
